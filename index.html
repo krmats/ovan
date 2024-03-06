@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+  df-messenger {
+    --df-messenger-bot-message: #5F146A;
+    --df-messenger-button-titlebar-color: #EEA421;
+    --df-messenger-chat-background-color: #eee;
+    --df-messenger-font-color: #eee;
+    --df-messenger-send-icon: #5F146A;
+    --df-messenger-user-message: #F0B152;
+    --df-messenger-input-placeholder-font-color: #FFF;
+  }
+
+  html, body {
+    height: 100% !important;
+    width: 100% !important;
+    max-height: 100% !important;
+    max-width: 100% !important;
+  }
+
+  #idiv {
+      
+  }
+
+  chat-wrapper[opened="true"] {
+      width: 600px !important;
+      height: 600px !important;
+    }
+
+  divisor{
+    position: fixed;
+    top: 41px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+  }
+</style>
+
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+
+<div class="divisor">
+
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+  <df-messenger intent="WELCOME" chat-title="Assistente Virtual do Observatório de Vigilância Alimentar e Nutricional"
+    agent-id="cd0bd843-cbf8-4274-80da-5c790d6bbba3" language-code="pt-br"
+    chat-icon="https://storage.googleapis.com/imagens_bot_van/Outros/iconVan.png" style=""></df-messenger>
+</div>
+  
+</body>
+
+</html>
