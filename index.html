@@ -13,10 +13,11 @@
   }
 
   html, body {
-    height: 100% !important;
-    width: 100% !important;
-    max-height: 100% !important;
-    max-width: 100% !important;
+       height: 100%;               /* Preenche toda a altura da tela */
+            margin: 0;                  /* Remove as margens padrão */
+            display: flex;              /* Usando flexbox para o layout */
+            justify-content: center;    /* Centraliza o conteúdo horizontalmente */
+            align-items: center;
     background-color: rgb(239,164,33,0.35);
   background-image: url("ovan.jpg");
    background-position: center; /* Center the image */
@@ -27,11 +28,11 @@
       
   }
 
-  imagem {
-    background-image: url("imagem.jpg");
-   background-position: center; /* Center the image */
-   background-repeat: no-repeat; /* Do not repeat the image */
-  }
+  img {
+            max-width: 100%;    /* A imagem não ultrapassa a largura da tela */
+            max-height: 100%;   /* A imagem não ultrapassa a altura da tela */
+            object-fit: contain;/* Garante que a imagem se ajuste sem distorção */
+        }
 
   chat-wrapper[opened="true"] {
       width: 600px !important;
@@ -58,7 +59,7 @@
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
-<div class="imagem">
+  <img src="caminho-da-imagem.jpg" alt="Imagem Centralizada">
 <div class="divisor">
 
   <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
